@@ -35,3 +35,20 @@ body {
 .digital-clock:hover {
     background: linear-gradient(to bottom, #48b1bf, #06beb6);
 }
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.hours, .colon, .minutes, .seconds {
+    background: -webkit-linear-gradient(180deg, #06beb6, #48b1bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 200px;
+    font-weight: 600;
+    padding: 0 10px;
+}
