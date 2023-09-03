@@ -26,3 +26,15 @@ const setClock = () => {
   
     return { hours, minutes, seconds, period };
   };
+
+  const formatDate = (todayDate) => {
+    const date = todayDate.getDate();
+    const year = todayDate.getFullYear();
+    const day = todayDate.toLocaleString("default", { weekday: "long" });
+    const month = todayDate.toLocaleString("default", { month: "short" });
+  
+    return `${day} ${month} ${date}, ${year}`;
+  };
+  
+  setClock();
+  setInterval(setClock, 1000);
