@@ -10,3 +10,19 @@ const setClock = () => {
   
     document.querySelector(".date").textContent = formatDate(today);
   };
+
+  const formatTime = (todayDate) => {
+    let hours = todayDate.getHours();
+    let minutes = todayDate.getMinutes();
+    let seconds = todayDate.getSeconds();
+  
+    let period = hours >= 12 ? "PM" : "AM";
+  
+    hours = hours > 12 ? hours % 12 : hours;
+  
+    hours = hours < 10 ? `0${hours}` : hours;
+    minutes = minutes < 10 ? `0${minutes}` : minutes;
+    seconds = seconds < 10 ? `0${seconds}` : seconds;
+  
+    return { hours, minutes, seconds, period };
+  };
