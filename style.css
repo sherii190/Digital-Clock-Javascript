@@ -52,3 +52,20 @@ body {
     font-weight: 600;
     padding: 0 10px;
 }
+
+.colon {
+    font-size: 100px;
+    color: #333;
+}
+
+.date {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.period {
+    font-size: 50px;
+    font-weight: 600;
+    color: #333;
+}
